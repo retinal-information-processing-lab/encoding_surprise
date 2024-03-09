@@ -8,10 +8,10 @@ This repository contains the following folders:
 ## Data description
 
 The spike times files are in hdf format and have 2 fields:
-- stimulus X (Nx2 matrix, where X(:,1) are timestamps in seconds, and X(:,2) represents stimulus values (binary, 0 or 1, where 1 corresponds to a bright flash)
-- spike times S, in seconds
+- `stimulus`, shaped Nx2, where X(:,1) are timestamps in seconds, and X(:,2) represents stimulus values (binary, 0 or 1, where 1 corresponds to a bright flash
+- `spikes`, shaped Mx1, in seconds
 
-The used MEA sample rate in both experiments is 20 kHz.
+The used MEA (Multielectrode Array) sample rate in both experiments is 20 kHz.
 
 ## Code demo
 
@@ -35,7 +35,9 @@ To reproduce the figures from the paper, the script ```demo_plot()``` can be use
 
 ## Notes
 
-The cell types clustering was performed using code available in the following repository by Francesco Trapani: https://github.com/jagorn/MEA-Analysis/tree/master
+The cell types clustering was performed using code available in the following repository by Francesco Trapani: 
+
+https://github.com/jagorn/MEA-Analysis/tree/master
 
 
 
