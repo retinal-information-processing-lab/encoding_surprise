@@ -17,13 +17,13 @@ The used MEA sample rate in both experiments is 20 kHz.
 
 ### Loading cell data
 
-Spike times To load the spike data from a given cell N, the following code can be used:
+To load the spike data from a given cell N, the following code can be used:
 
 MATLAB:
 
 ```MATLAB
 # define path
-data_path = 'data/spike_times';
+data_path = '/data/spike_times/';
 h5_path = [data_path, 'cell_N.h5'];
 
 # load stimulus and spikes
@@ -33,8 +33,11 @@ S = h5read(h5_path, '/spikes');
 
 ### Plotting figures
 
-To reproduce the figures from the paper, the following code can be used:
+To reproduce the figures from the paper, the script ```demo_plot()``` can be used.
 
+## Notes
+
+The cell types clustering was performed using code available in the following repository by Francesco Trapani: https://github.com/jagorn/MEA-Analysis/tree/master
 
 
 
