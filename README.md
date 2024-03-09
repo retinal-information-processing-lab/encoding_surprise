@@ -19,8 +19,6 @@ The used MEA sample rate in both experiments is 20 kHz.
 
 To load the spike data from a given cell N, the following code can be used:
 
-MATLAB:
-
 ```MATLAB
 # define path
 data_path = '/data/spike_times/';
